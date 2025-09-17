@@ -10,12 +10,15 @@ x = 400
 y = 90
 
 def move_triangle():
+    print("move_triangle")
     pass
 
 def move_rectangle():
+    print("move_rectangle")
     pass
 
 def move_circle():
+    print("move_circle")
     pass
 
 while True:
