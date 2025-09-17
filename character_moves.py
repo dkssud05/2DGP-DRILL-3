@@ -11,25 +11,30 @@ y = 90
 
 def move_triangle():
     print("move_triangle")
+    clear_canvas_now()
+    grass.draw_now(400, 30)
+    character.draw_now(x, y)
     pass
 
 def move_rectangle():
     print("move_rectangle")
+    clear_canvas_now()
+    grass.draw_now(400, 30)
+    character.draw_now(x, y)
     pass
 
 def move_circle():
     print("move_circle")
-    pass
-
-while True:
     clear_canvas_now()
     grass.draw_now(400, 30)
     character.draw_now(x, y)
+    pass
 
+while True:
     move_triangle()
     move_rectangle()
     move_circle()
 
-    delay(0.001)
+    delay(0.01)
 
 close_canvas()
