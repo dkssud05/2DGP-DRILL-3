@@ -8,6 +8,10 @@ character = load_image('character.png')
 
 x = 400
 y = 90
+angle = 0
+r = 200
+circle_x = 400
+circle_y = 300
 
 def move_triangle():
     pass
@@ -25,6 +29,10 @@ def move_rectangle():
         y -= 2
 
 def move_circle():
+    global x, y, r, angle
+    x = circle_x + r * math.sin(math.radians(angle))
+    y = circle_y + r * math.cos(math.radians(angle))
+    angle += 2
     pass
 
 while True:
@@ -32,8 +40,6 @@ while True:
     grass.draw_now(400, 30)
     character.draw_now(x, y)
 
-    move_triangle()
-    move_rectangle()
     move_circle()
 
     delay(0.01)
