@@ -88,7 +88,8 @@ def move_circle():
         character.draw_now(int(x), int(y))
         delay(0.01)
     # 원 끝나고 사각형 시작 위치(50, 90)로 바로 이동
-    x, y = 50, 90
+    x = 50
+    y = 90
 
 while True:
     move_rectangle()
