@@ -77,7 +77,6 @@ while True:
         move_triangle()
     if state == 2:
         move_circle()
-
     delay(0.01)
 
 close_canvas()
