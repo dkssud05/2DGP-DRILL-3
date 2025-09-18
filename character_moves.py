@@ -52,7 +52,7 @@ def move_triangle():
             triangle_state = 0
             x = 400
             y = 90
-            state = 1
+            state = 2
 
 def move_circle():
     global x, y, r, angle, state
@@ -71,9 +71,12 @@ while True:
     grass.draw_now(400, 30)
     character.draw_now(x, y)
 
-    move_rectangle()
-    move_triangle()
-    move_circle()
+    if state == 0:
+        move_rectangle()
+    if state == 1:
+        move_triangle()
+    if state == 2:
+        move_circle()
 
     delay(0.01)
 
